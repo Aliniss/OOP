@@ -29,11 +29,5 @@ class Category:
         return self.__products
 
     def add_product(self, product: Product):
-        for item in self.__products:
-            if item.name == product.name:
-                item.quantity += product.quantity
-                if item.price < product.price:
-                    item.price = product.price
-                return
         self.__products.append(product)
         Category.product_count += 1

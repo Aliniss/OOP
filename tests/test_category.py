@@ -12,7 +12,5 @@ def test_category_str(category_3):
     assert category_3.products == "Насос, 3000. Остаток: 25шт.\n"
 
 
-# Тестирование поиска аналогичного товара при добавлении товара в список по категории.
-# При совпадении названий товара количество складывается, цена берётся большая.
 def test_add_product(category_3, product_3):
     category_3.add_product(product_3)

@@ -9,8 +9,12 @@ def test_category_init(category_1, category_2, category_3):
 
 
 def test_category_str(category_3):
-    assert category_3.products == "Насос, 3000. Остаток: 25шт.\n"
+    assert category_3.products == "Насос, 3000 руб. Остаток: 25 шт.\n"
 
 
 def test_add_product(category_3, product_3):
     category_3.add_product(product_3)
+
+
+def test_str_category(category_1):
+    assert str(category_1) == "Бытовая техника, количество продуктов: 30 шт."
